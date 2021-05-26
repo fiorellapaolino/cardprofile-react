@@ -1,5 +1,5 @@
-body {
-    font-family: 'Montserrat',sans-serif;
+body{
+    font-family: 'Montserrat', sans-serif;
     background-color:#231E39;
     display: flex;
 	align-items: center;
@@ -7,7 +7,7 @@ body {
 	flex-direction: column;
     height: 100%;
     margin: 20px;
-  }
+}
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -33,7 +33,7 @@ body {
 }
 
 h3{
-	margin: 10px 0;
+    margin: 10px 0;
 }
 
 h6{
@@ -46,7 +46,7 @@ p{
 	line-height: 21px;
 }
 
-a{
+a { 
     text-decoration:none;
     color: black;
 }
@@ -78,7 +78,6 @@ a{
     list-style-type: none;
     margin:0;
     padding:0;
-
 }
 
 .skills ul li{
@@ -116,12 +115,12 @@ a{
     transition: 250ms;
 }
 
-#pag {
+#pag{
     position: relative;
     min-height: 100%;
 }
   
-#footer {
+#footer{
     line-height: 26px;
     color: white;
     text-align: center;
