@@ -17,7 +17,7 @@ body{
 }
 
 .card:hover{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;    display: flex;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;    
 }
 
 .img{
@@ -75,12 +75,12 @@ a {
 }
 
 .skills ul li{
-	border: 1px solid #2D2747;
-	border-radius: 4px;
-	display: inline-block;
-	font-size: 12px;
-	margin: 0 7px 7px 0;
-	padding: 8px;
+    border: 1px solid #2D2747;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 8px;
 }
 
 .container-social-icons{

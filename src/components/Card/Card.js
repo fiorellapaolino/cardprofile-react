@@ -49,7 +49,6 @@ const Card = () => {
               ))}
             </div>
           </div>
-
           <footer id="pag">
             <div id="footer">2021 &copy; Made by Fiorella Cristal Paolino</div>
           </footer>
