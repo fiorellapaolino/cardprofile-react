@@ -7,39 +7,31 @@ import Github from "../../assets/icons8-github.svg";
 
 const cards = [
   {
-      title: "Fiorella Paolino",
-      subtitle: "BUENOS AIRES",
-      job: "Full Stack Coder",
-      skills: {
-        0: "React",
-        1: "Node",
-        2: "JavaScript",
-        3: "HTML",
-        4: "CSS",
-        5: "Python",
-        6: "Django",
-        7: "SQL"
-      }
-    }
+    title: "Fiorella Paolino",
+    subtitle: "BUENOS AIRES",
+    job: "Full Stack Coder"
+  }
 ];
 
-
 const Card = () => {
-    
+
+  const skills = ['React', 'Node', 'Javascript', 'HTML', 'CSS', 'Python', 'Django', 'SQL'];
+
+  const list = skills.map(skill => <li key={skill}>{skill}</li>)
+  
         return (
           <div className="background">
           <div className="card">
             <div className="container">
-              {cards.map(({ title, subtitle, job, skills}) => (
+              {cards.map(({ title, subtitle, job}) => (
                 <div className="upper-container" key="{cards}">
-                    <img src={Image} alt="" className="img"/>
-
+                    <div className="img-box">
+                      <img src={Image} alt="" className="img"/>
+                    </div>
                     <h3><b>{title}</b></h3>
                     <h6>{subtitle}</h6>
                     <p>{job}</p>  
-
                     <button className="button"><a href="mailto:fiorellapaolino@gmail.com">REACH ME OUT</a></button>
-
                     <div className="container-social-icons">
                       <ul className="social-icons">
                           <li><a href="https://github.com/fiorellapaolino"><img src={Github} alt="" className="share github" /></a></li>
@@ -47,19 +39,11 @@ const Card = () => {
                           <li><a href="https://open.spotify.com/user/fiorellapaolino"><img src={Spotify} alt="" className="share spotify"/></a></li>
                       </ul>
                     </div>
-
                     <div className="skills">
-                    <h6>Skills</h6>
-                    <ul>
-                        <li>{skills[0]}</li>
-                        <li>{skills[1]}</li>
-                        <li>{skills[2]}</li>
-                        <li>{skills[3]}</li>
-                        <li>{skills[4]}</li>
-                        <li>{skills[5]}</li>
-                        <li>{skills[6]}</li>
-                        <li>{skills[7]}</li>
-                    </ul>
+                      <h6>Skills</h6>
+                      <ul>
+                      {list}
+                      </ul>
                     </div>
                 </div>
               ))}
